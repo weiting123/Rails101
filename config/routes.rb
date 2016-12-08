@@ -7,6 +7,9 @@ Rails.application.routes.draw do
 			post :quit
 		end
 	end
+	namespace :account do
+    resources :groups
+  end
 	# root "welcome#index"
 	root "groups#index"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
